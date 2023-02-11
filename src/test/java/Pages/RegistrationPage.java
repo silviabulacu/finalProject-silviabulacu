@@ -43,14 +43,7 @@ public class RegistrationPage extends BasePage {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"submitinreg\"]")
     private WebElement submit;
-
-
-    public String firstNameText = "Silvia";
-    public String lastNameText = "Bulacu";
-    public String emailText = "sylvya_ro@yahoo.com";
-    public String phoneText = "0763219015";
-    public String passwordText = "Silvia@123";
-    public String confirmPasswordText = "Silvia@123";
+    
 
     public RegistrationPage(WebDriver driver) {
         super(driver);

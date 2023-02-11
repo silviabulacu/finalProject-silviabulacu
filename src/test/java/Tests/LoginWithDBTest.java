@@ -17,7 +17,6 @@ public class LoginWithDBTest extends BaseTest{
         test = ExtentTestManager.startTest(method.getName(), "Login Test with db");
 
         try {
-//            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/automation", "root", "");
             Connection conn = DriverManager.getConnection("jdbc:mysql://" + dbHostname + ":" + dbPort
                     + "/" + dbSchema, dbUser, new String(base64.decode(dbPassword.getBytes())));
             Statement statement = conn.createStatement();

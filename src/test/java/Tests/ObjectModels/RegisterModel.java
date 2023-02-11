@@ -11,18 +11,6 @@ public class RegisterModel
     private String error;
     private String errorType;
 
-
-//    public RegisterModel(String firstname, String lastname, String email, String phone, String password, String confirmPassword, String error, String errorType) {
-//        this.firstname = firstname;
-//        this.lastname = lastname;
-//        this.email = email;
-//        this.phone = phone;
-//        this.password = password;
-//        this.confirmPassword = confirmPassword;
-//        this.error = error;
-//        this.errorType = errorType;
-//    }
-
     public String getFirstname() {
         return firstname;
     }

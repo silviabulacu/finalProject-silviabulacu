@@ -27,7 +27,6 @@ public class BaseTest {
     public void startUp(){
         WebDriverManager.chromedriver().setup();
 
-//        System.setProperty("webdriver.chrome.driver", "webdriver/chromedriver");
         driver = new ChromeDriver();
 
         dbHostname = GenericUtils.getDBHostname(usedConfig);

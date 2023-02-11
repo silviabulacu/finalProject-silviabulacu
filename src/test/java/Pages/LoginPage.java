@@ -56,42 +56,7 @@ public class LoginPage extends BasePage{
         passwordInput.sendKeys(password);
         submitButton.submit();
     }
-//
-//    @Test
-//    public void testloginFailed() {
-////        System.setProperty("webdriver.chrome.driver", "webdriver/chromedriver");
-////
-////        WebDriver driver = new ChromeDriver();
-//        this.driver.get("https://www.nichiduta.ro/autentificare");
-//
-//        WebElement username = this.driver.findElement(By.xpath("//*[@id=\"valid-email\"]"));
-//        WebElement password = this.driver.findElement(By.xpath("//*[@id=\"valid-password\"]"));
-//        WebElement submitButton = this.driver.findElement(By.xpath("//*[@id=\"submitinreg\"]"));
-//
-//        username.clear();
-//        username.sendKeys("sylvya_ro@yahoo.com");
-//        password.clear();
-//        password.sendKeys("Silvia@123123");
-//        submitButton.submit();
-//
-//        Assert.assertEquals(this.driver.findElement(By.xpath("//*[@id=\"content\"]/div[1]/span")).getText(), "Nu exista in baza noastra de date un cont format din combinatia introdusa de dumneavoastra. Va rugam sa mai incercati.");
-//
-//    }
-//
-//    public void login(String username, String password, String userError, String passError) {
-//        login(username, password);
-//        Assert.assertEquals(usernameError.getText(), userError);
-//        Assert.assertEquals(passwordError.getText(), passError);
-//    }
-//
-//    public void login(String username, String password) {
-//        usernameInput.clear();
-//        usernameInput.sendKeys(username);
-//        passwordInput.clear();
-//        passwordInput.sendKeys(password);
-//        submitButton.submit();
-//    }
-//
+
     public String getUsernameError() {
         return usernameError.getText();
     }
@@ -101,14 +66,14 @@ public class LoginPage extends BasePage{
     }
 
 
-    public void checkErrorUsername(String error, String expected){
+    public void checkErrorUsername(String error, String expected) {
         Assert.assertEquals(error, expected);
     }
 
     public void checkSuccess(WebDriver driver) {
         WebElement accountButton = driver.findElement(By.xpath("//*[@id=\"acc_button\"]"));
 
-        Actions action = new Actions(driver);
+            Actions action = new Actions(driver);
         action.moveToElement(accountButton).perform();
         action.click().build().perform();
 

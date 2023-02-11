@@ -27,11 +27,8 @@ public class RegisterWithJsonTest extends BaseTest {
         File file = new File("src/test/resources/data/register.json");
         System.out.println(file);
         RegisterModel[] registerModels = objectMapper.readValue(file, RegisterModel[].class);
-        System.out.println(file);
 
         for (RegisterModel registerModel : registerModels) {
-            printData(registerModel);
-
             dp.add(new Object[]{registerModel});
         }
 

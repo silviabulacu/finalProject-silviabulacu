@@ -56,11 +56,6 @@ public class RegistrationPage extends BasePage {
         super(driver);
     }
 
-//    public void verifyPage() {
-//        Assert.assertEquals(driver.findElement(By.cssSelector(firstName)).getText(), "Client existent");
-//        Assert.assertEquals(driver.findElement(By.cssSelector(lastName)).getText(), "Adresa de e-mail:");
-//        Assert.assertEquals(driver.findElement(By.cssSelector(email)).getText(), "Parola:");
-//    }
 
     @Test
     public void register(String firstNameText,
@@ -68,11 +63,8 @@ public class RegistrationPage extends BasePage {
                          String emailText,
                          String phoneText,
                          String passwordText,
-                         String confirmPasswordText) {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\silvia\\IdeaProjects\\webdriver\\chromedriver.exe");
-//
-//        WebDriver driver = new ChromeDriver();
-//        driver.get("https://www.nichiduta.ro/inregistrare");
+                         String confirmPasswordText
+    ) {
 
         this.firstNameInput.clear();
         this.firstNameInput.sendKeys(firstNameText);

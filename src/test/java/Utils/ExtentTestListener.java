@@ -1,6 +1,6 @@
 package Utils;
 
-import Tests.DemoApp.BaseTest;
+import Tests.BaseTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import org.apache.commons.io.FileUtils;

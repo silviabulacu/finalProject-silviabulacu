@@ -1,0 +1,72 @@
+[
+  {
+    "firstname" : "",
+    "lastname" : "popescu",
+    "email" : "email2@email.com",
+    "phone" : "07111111111",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1",
+    "error" : "Camp obligatoriu!",
+    "errorType" : "firstNameInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "",
+    "email" : "email2@email.com",
+    "phone" : "07111111111",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1",
+    "error" : "Camp obligatoriu!",
+    "errorType" : "getLastNameInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "popescu",
+    "email" : "",
+    "phone" : "07111111111",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1",
+    "error" : "Adresa de email trebuie completata.",
+    "errorType" : "getEmailInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "popescu",
+    "email" : "emailgresit",
+    "phone" : "07111111111",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1",
+    "error" : "Adresa de email trebuie sa aiba formatul ex: name@domain.com fara spatii libere inainte sau dupa",
+    "errorType" : "getEmailInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "popescu",
+    "email" : "email123@email.com",
+    "phone" : "",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1",
+    "error" : "Numarul de telefon trebuie completat.",
+    "errorType" : "getPhoneInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "popescu",
+    "email" : "email123@amil.com",
+    "phone" : "07111111111",
+    "password" : "",
+    "confirmPassword" : "Parola@1",
+    "error" : "Parola obligatorie.",
+    "errorType" : "getPasswordInputError"
+  },
+  {
+    "firstname" : "iulia",
+    "lastname" : "popescu",
+    "email" : "email123@amil.com",
+    "phone" : "07111111111",
+    "password" : "Parola@1",
+    "confirmPassword" : "Parola@1123123",
+    "error" : "Parola nu corespunde",
+    "errorType" : "getConfirmPasswordInputError"
+  }
+]

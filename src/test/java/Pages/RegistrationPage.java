@@ -43,7 +43,7 @@ public class RegistrationPage extends BasePage {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"submitinreg\"]")
     private WebElement submit;
-    
+
 
     public RegistrationPage(WebDriver driver) {
         super(driver);
